@@ -1,0 +1,49 @@
+*{
+			margin: 0px;
+			padding: 0px;
+		}
+		#caja{
+			width: 300px;
+			height: 300px;
+			margin: auto;
+			margin-top: 35px;
+			-webkit-animation: rotar 3s linear infinite alternate;
+			-moz-animation: rotar 3s linear infinite alternate;
+		}
+		.cara{
+			border: 3px solid black;
+			position: absolute;
+		}
+		#uno{
+			background-color: blue;
+			-webkit-transform: skew(45deg,0deg);
+			-moz-transform: skew(45deg,0deg);
+			width: 200px;
+			height: 100px;
+			position: absolute;
+			margin-left: 50px;
+		}
+		#dos{
+			background-color: red;
+			width: 200px;
+			height: 200px;
+			margin-top: 100px;
+			margin-left: 100px;
+		}
+		#tres{
+			background-color: lime;
+			-webkit-transform: skew(0deg,45deg);
+			-moz-transform: skew(0deg,45deg);
+			width: 100px;
+			height: 200px;
+			margin-left: 0px;
+			margin-top: 50px;
+		}
+		@-webkit-keyframes rotar{
+			0%{-webkit-transform: rotate(360deg) scale(.5)}
+			100%{-webkit-transform: rotate(36000000deg) scale(.9)}
+		}
+		@-moz-keyframes rotar{
+			0%{-moz-transform: rotate(360deg) scale(.5)}
+			100%{-moz-transform: rotate(36000000deg) scale(.9)}
+		}
